@@ -22,7 +22,7 @@ function findAllUsers(req, res) {
 }
 
 //update
-// i think i need to do {data:updatedUser} wihtin the query ?
+// not working - completely wrong - pretty lost
 function updateOneUser(req, res) {
   const updatedUser = req.body;
   const id = parseInt(req.params.id);
@@ -50,3 +50,5 @@ function deleteUserById(req, res) {
 }
 
 module.exports = { createOneUser, findAllUsers, updateOneUser, deleteUserById };
+
+///
